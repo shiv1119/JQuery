@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQuery Selector</title>
+    </head>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#real-id").css("background-color","pink");
+        }); 
+
+        $(function() {
+            $(".real-class").css("background-color","red");
+        });
+        $(function() {
+            $("h3").css("background-color","blue");
+        });
+    </script>
+    <body>
+        <!-- 
+        Jquery selectors are used to select html elements..
+        
+
+    ---
+    All Jquery selectors start with a dolor sign and parenthesis e.g. $(). It is known as the factory function 
+
+    1) Tag name selector --- It represents the name available in the DOM.. e.g $('p') -- selects the paragraph in the document.
+
+    2) Tag Id -- It represents a tag available with a specific ID in DOM. e.g. $('#real-id')
+
+    3) Tag class -- It represents a tag available with a specific class in the DOM .. e.g. $('real-class')
+     -->
+        <h1 id="real-id">
+            hello i contain id
+        </h1>
+        <h2 class="real-class">
+            i contain a class
+        </h2>
+        <h3>
+            i dont contain any id and class but i will be selected by my tag
+            name
+        </h3>
+    </body>
+</html>

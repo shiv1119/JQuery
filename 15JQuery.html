@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delay</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+           $(function() {
+            $("#btn").click(function() {
+               $("#panel").delay(4000).fadeIn();
+            });
+           });
+        </script>
+    </head>
+    <body>
+        <!--                 
+
+            JQuery delay() ---
+                                delay() methods are used to delay the execution of a function in the queue ..
+
+            syntax ---
+
+                        $(selector).delay(speed,queueName);
+                        
+
+        speed -  specifies the speed of the delay. Its possible vales are slow,fast and milliseconds 
+        
+        queueName - It is optional parameter. It specifies the name of the queue. Its default value is "fx" the standard queue effect  
+         -->
+        <button id="btn">Click to animate</button>
+
+        <div id="panel" style="background-color: black; width:200px;
+            height:100px; color:white; display:none;">
+            Hello programmer you are learning JQuery in a simplest and easiest
+            way keep it on
+        </div>
+    </body>
+</html>

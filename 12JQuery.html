@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slide Up</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            $(function() {
+                $("#flip").click(function() {
+                    $("#panel").slideUp("slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!--                 
+
+            JQuery slideUp() ---
+                                slideUp()method is used to slide up a given content.
+
+            syntax ---
+
+                        $(selector).slideUp(speed);
+                        $(selector).slideUp(speed,callback);
+                        $(selector).slideUp(speed,easing,callback);
+
+        speed -  specifies the speed of the delay. Its possible vales are slow,fast and milliseconds 
+        
+        easing - It specifies the easing function to be used for transition 
+
+        callback - It is also an optional parameter. It specifies the function to be called after completion of slideUp() effects 
+         -->
+        <div id="flip">Click to slide Up</div>
+        <br>
+        <div id="panel" style="background-color: black; width:500px;
+            height:100px; color:white;">
+            Hello programmer you are learning JQuery in a simplest and easiest
+            way keep it on
+        </div>
+    </body>
+</html>

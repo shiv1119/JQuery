@@ -1,0 +1,25 @@
+what is JQuery----
+
+"It's a small and lightened javascript library that is cross-platform. JQuery means write less do more. It simply simplifies ajax calls and dom manipulation.."
+
+JQuery features --
+
+1) HTML manipulation
+2) Dom manipulation
+3) Dom element selection 
+4) CSS manipulation
+5) Effect and animation 
+6) Utilities
+7) Ajax 
+8) HTML event methods
+9) JSON parsing
+10) Extensibility through plug-ins
+
+
+Why it is required ---
+
+1) It is very fast and extensible
+2) It facilitates the users to write UI-related function codes in the minimum possible lines
+3) It improves the performance of an applications.
+4) Browser's compatible web application can be developed.
+5) It uses mostly new features of new browsers.

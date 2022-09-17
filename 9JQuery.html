@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Effect - Fade Toggle</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#top").click(function() {
+                    $("#div1").fadeToggle("3000");
+                });
+            });
+    </script>
+    </script>
+    </head>
+    <body>
+        <!-- 
+            fadeToggle() method -- It is used to fade Toggle the element..
+
+
+            syntax for fadeToggle()
+        
+        $(selector).fadeToggle();
+        $(selector).fadeToggle(speed,callback);
+        $(selector).fadeToggle(speed,easing,callback);
+
+        speed - optional parameter that specifies the speed of the delay. Its possible vales are slow,fast and milliseconds 
+        
+        easing - It specifies the easing function to be used for transition 
+
+
+        3 - callback - It is also an optional parameter. It specifies the function to be called after completion of fadeTogToggle() effects 
+
+        -->
+        <button id="top"> CLICK ME TO FADE IN FADE OUT Buddy</button>
+        <div id="div1" style="width:200px;height:200px; background-color:gray;">
+
+        </div>
+    </body>
+</html>
