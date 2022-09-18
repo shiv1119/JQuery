@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery click</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            $(function() {
+                $("p").click(function() {
+                    alert("This paragraph was clicked!");
+                });
+                $("h1,h2,h3").click(function(){
+                    $(this).hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+
+
+        <!-- 
+
+        When we click on an element the click event occurs and once the click event occurs it execute  the click () method or attach a function to run..
+
+        syntax --
+                $(selector).click();  //used to trigger  the click event for the selected elements
+
+                $(selector).click(function); //used to attach the function to click event 
+     -->
+        <p>Click on the statements</p>
+
+        <h1>ONclick this heading will disappear</h1>
+        <h2>Bacchao bacchao re mein bhi eske sath disappear ho jaunga</h2>
+        <h3>Are mjhe bhi bachao ye sb mjhe bhi le doobenge re baba</h3>
+    </body>
+</html>

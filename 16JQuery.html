@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQuery Html</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            $(function(){
+                $("#btn").click(function(){
+                    $("p").html("Hello <b>Buddhu bacche kya sikh rhe ho aaj kl </b>");
+                });
+                $("#btn1").click(function(){
+                    alert($("h1").html());
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- 
+
+        jQuery html() method is used to change the entire content of the the selected elements.. It replaces the selected content with new contents.
+
+        syntax: 
+                $(selector).html()  / used to return  content 
+                $(selector).html(content)  / use to set content 
+                $(selector).html(function(index,currentcontent))  / use to set content by calling function  
+
+
+     -->
+        <button id="btn">Click here to change the content of all p elements
+        </button>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+            aperiam.</p> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            facere!</p>
+
+
+        <button id="btn1">Click here to execute function</button>
+        <h1>
+            Hello jQuery kaise ho baccha lal
+        </h1>
+
+
+        <h3><b>click</b> here to change the <span id="tag">html</span> to text</h3>
+        <script>
+            $("h3").click(function(){
+                var htmlString = $(this).html();
+                $(this).html(htmlString);
+            });
+        </script>
+    </body>
+</html>
